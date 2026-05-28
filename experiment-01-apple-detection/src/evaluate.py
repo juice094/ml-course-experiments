@@ -30,9 +30,13 @@ def get_transforms():
 
 
 def get_model(num_classes=8, model_path=None):
-    model = models.resnet18(weights=None)
-    in_features = model.fc.in_features
-    model.fc = nn.Linear(in_features, num_classes)
+    # 必须与 train.py 的模型架构一致：EfficientNet-B0 + Dropout
+    model = models.efficientnet_b0(weights=None)
+    in_features = model.classifier[1].in_features
+    model.classifier = nn.Sequential(
+        nn.Dropout(0.5),
+        nn.Linear(in_features, num_classes)
+    )
 
     if model_path and Path(model_path).exists():
         checkpoint = torch.load(model_path, map_location='cpu', weights_only=True)
