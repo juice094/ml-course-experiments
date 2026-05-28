@@ -41,9 +41,13 @@ experiment-02-weather-prediction/
 ├── data/                    # 原始气象数据 (.xls, gitignored)
 ├── notebooks/               # 数据探索与可视化
 ├── src/                     # 建模与训练脚本
-│   └── (待实现)
-├── reports/                 # 实验报告
-│   └── experiment_report.md # (待创建)
+│   ├── preprocess.py        # 数据清洗、特征工程、时间切分
+│   ├── train_xgboost.py     # XGBoost 基线模型
+│   └── train_lstm.py        # LSTM 深度学习模型
+├── reports/
+│   ├── experiment_proposal.md   # 问题规划与方向分析
+│   └── experiment_report.md     # (待填写)
+├── outputs/                 # 预处理后的 CSV 和结果
 └── requirements.txt         # Python 依赖
 ```
 
@@ -54,9 +58,29 @@ pip install pandas numpy matplotlib scikit-learn
 # 或根据建模方案补充：torch, tensorflow, xgboost, prophet 等
 ```
 
-## 待确定事项
+## 已确定方案
 
-- [ ] 预测目标：温度 T / 降水量 RRR / 多变量预测？
-- [ ] 模型方案：ARIMA / LSTM / Transformer / XGBoost？
-- [ ] 评估指标：RMSE / MAE / MAPE？
-- [ ] 预测粒度：单步预测 / 多步预测？
+| 决策项 | 选择 | 说明 |
+|--------|------|------|
+| **预测目标** | 气温 T | 高完整度列（99.99%），周期性强，适合时序建模 |
+| **任务类型** | 回归 | 预测未来 3 小时的温度值 |
+| **特征** | 多变量 | T, U, Ff, Po, Td + 时间周期性特征 + 滞后特征 |
+| **模型方案** | XGBoost + LSTM | 双模型对比：传统 ML vs 深度学习 |
+| **评估指标** | RMSE, MAE, R² | 回归标准指标 |
+| **验证方式** | 时间序列切分 | Train: 2005-2020, Val: 2021-2022, Test: 2023-2025 |
+
+## 执行流程
+
+```bash
+# 1. 数据预处理（构造特征、时间切分）
+cd src
+python preprocess.py --target T --city all
+
+# 2. XGBoost 基线训练
+python train_xgboost.py --target T --n-estimators 500
+
+# 3. LSTM 训练
+python train_lstm.py --target T --seq-len 24 --epochs 50
+
+# 4. 对比两个模型的 Test R²，选择最优方案填入报告
+```

@@ -1,0 +1,10 @@
+Apple Quality Detection - Training Log
+Run Timestamp: 20260528_213059
+Model: EfficientNet-B0 (pretrained) + Dropout(0.5)
+Epochs: 50, Batch Size: 8, LR: 0.001
+Train Samples: 120, Val Samples: 30
+Classes: ['black_spot', 'bruised', 'cracked', 'diseased', 'fresh', 'insect_damaged', 'rotten', 'wrinkled']
+Device: cpu
+======================================================================
+ Epoch | Train Loss | Train Acc |   Val Loss |   Val Acc |           LR | Best
+----------------------------------------------------------------------
