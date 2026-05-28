@@ -75,24 +75,32 @@ def main():
     print(f"Features: {len(feature_cols)}")
 
     # -------------------------------------------------------------------------
-    # 训练 XGBoost
+    # 训练 XGBoost（使用原生 API，兼容 XGBoost 3.x）
     # -------------------------------------------------------------------------
     print("\nTraining XGBoost ...")
-    model = xgb.XGBRegressor(
-        n_estimators=args.n_estimators,
-        max_depth=args.max_depth,
-        learning_rate=args.learning_rate,
-        subsample=0.8,          # 每棵树用 80% 样本，防止过拟合
-        colsample_bytree=0.8,   # 每棵树用 80% 特征，防止过拟合
-        random_state=42,
-        n_jobs=-1,              # 使用所有 CPU 核心
-    )
 
-    model.fit(
-        X_train, y_train,
-        eval_set=[(X_val, y_val)],
-        callbacks=[xgb.callback.EarlyStopping(rounds=args.early_stopping)],
-        verbose=False
+    dtrain = xgb.DMatrix(X_train, label=y_train, feature_names=feature_cols)
+    dval = xgb.DMatrix(X_val, label=y_val, feature_names=feature_cols)
+    dtest = xgb.DMatrix(X_test, label=y_test, feature_names=feature_cols)
+
+    params = {
+        'objective': 'reg:squarederror',
+        'max_depth': args.max_depth,
+        'learning_rate': args.learning_rate,
+        'subsample': 0.8,
+        'colsample_bytree': 0.8,
+        'seed': 42,
+    }
+
+    evals_result = {}
+    model = xgb.train(
+        params,
+        dtrain,
+        num_boost_round=args.n_estimators,
+        evals=[(dval, 'val')],
+        early_stopping_rounds=args.early_stopping,
+        evals_result=evals_result,
+        verbose_eval=False,
     )
 
     print(f"Best iteration: {model.best_iteration}")
@@ -100,9 +108,9 @@ def main():
     # -------------------------------------------------------------------------
     # 评估
     # -------------------------------------------------------------------------
-    y_pred_train = model.predict(X_train)
-    y_pred_val = model.predict(X_val)
-    y_pred_test = model.predict(X_test)
+    y_pred_train = model.predict(dtrain)
+    y_pred_val = model.predict(dval)
+    y_pred_test = model.predict(dtest)
 
     train_metrics = evaluate(y_train, y_pred_train, 'Train')
     val_metrics = evaluate(y_val, y_pred_val, 'Validation')
@@ -112,9 +120,12 @@ def main():
     # 特征重要性
     # -------------------------------------------------------------------------
     print("\nTop 10 Feature Importances:")
+    importance_dict = model.get_score(importance_type='gain')
+    # 补全未出现在 importance_dict 中的特征（增益为 0）
+    importance_full = {f: importance_dict.get(f, 0.0) for f in feature_cols}
     importance = pd.DataFrame({
-        'feature': feature_cols,
-        'importance': model.feature_importances_
+        'feature': list(importance_full.keys()),
+        'importance': list(importance_full.values()),
     }).sort_values('importance', ascending=False)
 
     print(importance.head(10).to_string(index=False))
