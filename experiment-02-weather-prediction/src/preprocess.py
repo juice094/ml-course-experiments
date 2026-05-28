@@ -55,7 +55,7 @@ def load_city_data(city_name, file_name):
     return df
 
 
-def clean_data(df):
+def clean_data(df, missing_threshold=0.95):
     """数据清洗：处理缺失值、构造特征。"""
     # 删除时间解析失败的行
     df = df.dropna(subset=['datetime'])
@@ -63,9 +63,22 @@ def clean_data(df):
     # 删除完全缺失的列
     df = df.dropna(axis=1, how='all')
 
-    # 数值列：前向填充 + 后向填充（气象数据相邻时刻通常相近）
-    numeric_cols = df.select_dtypes(include=[np.number]).columns
-    df[numeric_cols] = df[numeric_cols].fillna(method='ffill').fillna(method='bfill')
+    # 删除缺失率过高的列（对建模无意义）
+    missing_ratio = df.isnull().mean()
+    cols_to_drop = missing_ratio[missing_ratio > missing_threshold].index.tolist()
+    if cols_to_drop:
+        print(f"  Dropping columns with >{missing_threshold*100:.0f}% missing: {cols_to_drop}")
+        df = df.drop(columns=cols_to_drop)
+
+    # 对所有剩余列做前向/后向填充（气象数据相邻时刻通常相近）
+    # 先尝试将 object 列转为数值（某些数值列可能被误读为字符串）
+    for col in df.columns:
+        if col not in ['datetime', 'city'] and not pd.api.types.is_numeric_dtype(df[col]):
+            df[col] = pd.to_numeric(df[col], errors='coerce')
+
+    # 再次删除因转换而变成全空的列，然后整体填充
+    df = df.dropna(axis=1, how='all')
+    df = df.ffill().bfill()
 
     # 构造时间特征
     df['year'] = df['datetime'].dt.year
