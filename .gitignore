@@ -63,3 +63,6 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Temp workspace
+临时文件夹/
