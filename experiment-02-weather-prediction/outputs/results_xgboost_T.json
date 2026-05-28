@@ -1,0 +1,113 @@
+{
+  "model": "XGBoost",
+  "target": "T",
+  "config": {
+    "target": "T",
+    "n_estimators": 500,
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "early_stopping": 50
+  },
+  "metrics": {
+    "train": {
+      "rmse": 0.5942580930337042,
+      "mae": 0.4524233596362102,
+      "r2": 0.9976646397377008,
+      "mape": Infinity
+    },
+    "val": {
+      "rmse": 0.9062484478668399,
+      "mae": 0.6654713918020667,
+      "r2": 0.994673355927859,
+      "mape": Infinity
+    },
+    "test": {
+      "rmse": 0.8888946957075401,
+      "mae": 0.6629897051121284,
+      "r2": 0.9949345645692054,
+      "mape": Infinity
+    }
+  },
+  "feature_importance": [
+    {
+      "feature": "T_lag8",
+      "importance": 31197.759765625
+    },
+    {
+      "feature": "T_lag1",
+      "importance": 14063.04296875
+    },
+    {
+      "feature": "Tx",
+      "importance": 2664.055419921875
+    },
+    {
+      "feature": "hour_cos",
+      "importance": 2613.90283203125
+    },
+    {
+      "feature": "T_lag24",
+      "importance": 2163.23779296875
+    },
+    {
+      "feature": "Tn",
+      "importance": 1914.9171142578125
+    },
+    {
+      "feature": "hour_sin",
+      "importance": 1549.66259765625
+    },
+    {
+      "feature": "hour",
+      "importance": 907.2528686523438
+    },
+    {
+      "feature": "P",
+      "importance": 539.7901611328125
+    },
+    {
+      "feature": "U",
+      "importance": 421.2094421386719
+    },
+    {
+      "feature": "Td",
+      "importance": 216.25917053222656
+    },
+    {
+      "feature": "T_rolling_mean_8",
+      "importance": 215.0433807373047
+    },
+    {
+      "feature": "month_cos",
+      "importance": 104.84209442138672
+    },
+    {
+      "feature": "dayofyear_cos",
+      "importance": 78.61900329589844
+    },
+    {
+      "feature": "Ff",
+      "importance": 73.6348876953125
+    },
+    {
+      "feature": "weekofyear",
+      "importance": 71.41764068603516
+    },
+    {
+      "feature": "VV",
+      "importance": 62.375404357910156
+    },
+    {
+      "feature": "month_sin",
+      "importance": 59.405006408691406
+    },
+    {
+      "feature": "T_lag4",
+      "importance": 55.599796295166016
+    },
+    {
+      "feature": "dayofyear_sin",
+      "importance": 54.0653076171875
+    }
+  ]
+}

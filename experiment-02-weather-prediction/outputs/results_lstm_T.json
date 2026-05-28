@@ -1,0 +1,21 @@
+{
+  "model": "LSTM",
+  "target": "T",
+  "config": {
+    "target": "T",
+    "seq_len": 24,
+    "hidden_size": 64,
+    "num_layers": 2,
+    "dropout": 0.2,
+    "epochs": 50,
+    "batch_size": 256,
+    "lr": 0.001,
+    "patience": 10
+  },
+  "best_val_rmse": 3.0501788102562335,
+  "test_metrics": {
+    "rmse": 3.4772427354177657,
+    "mae": 2.8167531490325928,
+    "r2": 0.9223912954330444
+  }
+}
