@@ -91,7 +91,7 @@ def main():
     model.fit(
         X_train, y_train,
         eval_set=[(X_val, y_val)],
-        early_stopping_rounds=args.early_stopping,
+        callbacks=[xgb.callback.EarlyStopping(rounds=args.early_stopping)],
         verbose=False
     )
 
