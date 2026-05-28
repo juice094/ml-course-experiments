@@ -9,12 +9,31 @@ Weather Temperature Prediction - XGBoost Baseline
 
 import json
 import argparse
+import sys
+from datetime import datetime
 from pathlib import Path
 
 import numpy as np
 import pandas as pd
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 import xgboost as xgb
+
+
+class Logger:
+    """同时将 stdout 输出到终端和日志文件。"""
+
+    def __init__(self, filepath, terminal):
+        self.terminal = terminal
+        self.log = open(filepath, 'w', encoding='utf-8')
+
+    def write(self, message):
+        self.terminal.write(message)
+        self.log.write(message)
+        self.log.flush()
+
+    def flush(self):
+        self.terminal.flush()
+        self.log.flush()
 
 DATA_DIR = Path(__file__).parent.parent / "outputs"
 MODEL_DIR = Path(__file__).parent.parent / "models"
@@ -67,6 +86,12 @@ def main():
     parser.add_argument('--learning-rate', type=float, default=0.05, help='Learning rate')
     parser.add_argument('--early-stopping', type=int, default=50, help='Early stopping rounds')
     args = parser.parse_args()
+
+    # 启动日志重定向
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    log_path = OUTPUT_DIR / f'training_log_xgboost_{args.target}_{datetime.now():%Y%m%d_%H%M%S}.txt'
+    sys.stdout = Logger(log_path, sys.stdout)
+    print(f"Logging to: {log_path}\n")
 
     print("Loading data ...")
     X_train, y_train, X_val, y_val, X_test, y_test, feature_cols = load_data(args.target)
