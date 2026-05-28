@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# PyTorch
+*.pth
+*.pt
+
+# Data files (too large for GitHub)
+*.zip
+*.tar.gz
+*.rar
+
+# Images (managed separately or via LFS if needed)
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.webp
+
+# Excel data (raw datasets managed separately)
+*.xls
+*.xlsx
+
+# Outputs
+outputs/runs/
+outputs/*.json
+outputs/*.txt
+models/*.pth
+models/*.pt
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
