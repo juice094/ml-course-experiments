@@ -1,0 +1,266 @@
+{
+  "source_dir": "..\\outputs\\classified\\fresh",
+  "target_dir": "..\\data\\train\\fresh",
+  "original_max_index": 23,
+  "merged_count": 43,
+  "merged_files": [
+    {
+      "original_name": "FreshApple (100).jpg",
+      "new_name": "FreshApple (24).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (100).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (24).jpg"
+    },
+    {
+      "original_name": "FreshApple (101).jpg",
+      "new_name": "FreshApple (25).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (101).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (25).jpg"
+    },
+    {
+      "original_name": "FreshApple (102).jpg",
+      "new_name": "FreshApple (26).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (102).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (26).jpg"
+    },
+    {
+      "original_name": "FreshApple (103).jpg",
+      "new_name": "FreshApple (27).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (103).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (27).jpg"
+    },
+    {
+      "original_name": "FreshApple (104).jpg",
+      "new_name": "FreshApple (28).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (104).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (28).jpg"
+    },
+    {
+      "original_name": "FreshApple (105).jpg",
+      "new_name": "FreshApple (29).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (105).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (29).jpg"
+    },
+    {
+      "original_name": "FreshApple (106).jpg",
+      "new_name": "FreshApple (30).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (106).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (30).jpg"
+    },
+    {
+      "original_name": "FreshApple (107).jpg",
+      "new_name": "FreshApple (31).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (107).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (31).jpg"
+    },
+    {
+      "original_name": "FreshApple (108).jpg",
+      "new_name": "FreshApple (32).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (108).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (32).jpg"
+    },
+    {
+      "original_name": "FreshApple (110).jpg",
+      "new_name": "FreshApple (33).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (110).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (33).jpg"
+    },
+    {
+      "original_name": "FreshApple (111).jpg",
+      "new_name": "FreshApple (34).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (111).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (34).jpg"
+    },
+    {
+      "original_name": "FreshApple (112).jpg",
+      "new_name": "FreshApple (35).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (112).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (35).jpg"
+    },
+    {
+      "original_name": "FreshApple (114).jpg",
+      "new_name": "FreshApple (36).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (114).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (36).jpg"
+    },
+    {
+      "original_name": "FreshApple (115).jpg",
+      "new_name": "FreshApple (37).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (115).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (37).jpg"
+    },
+    {
+      "original_name": "FreshApple (116).jpg",
+      "new_name": "FreshApple (38).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (116).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (38).jpg"
+    },
+    {
+      "original_name": "FreshApple (117).jpg",
+      "new_name": "FreshApple (39).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (117).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (39).jpg"
+    },
+    {
+      "original_name": "FreshApple (118).jpg",
+      "new_name": "FreshApple (40).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (118).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (40).jpg"
+    },
+    {
+      "original_name": "FreshApple (119).jpg",
+      "new_name": "FreshApple (41).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (119).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (41).jpg"
+    },
+    {
+      "original_name": "FreshApple (120).jpg",
+      "new_name": "FreshApple (42).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (120).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (42).jpg"
+    },
+    {
+      "original_name": "FreshApple (121).jpg",
+      "new_name": "FreshApple (43).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (121).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (43).jpg"
+    },
+    {
+      "original_name": "FreshApple (122).jpg",
+      "new_name": "FreshApple (44).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (122).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (44).jpg"
+    },
+    {
+      "original_name": "FreshApple (123).jpg",
+      "new_name": "FreshApple (45).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (123).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (45).jpg"
+    },
+    {
+      "original_name": "FreshApple (124).jpg",
+      "new_name": "FreshApple (46).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (124).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (46).jpg"
+    },
+    {
+      "original_name": "FreshApple (125).jpg",
+      "new_name": "FreshApple (47).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (125).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (47).jpg"
+    },
+    {
+      "original_name": "FreshApple (127).jpg",
+      "new_name": "FreshApple (48).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (127).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (48).jpg"
+    },
+    {
+      "original_name": "FreshApple (128).jpg",
+      "new_name": "FreshApple (49).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (128).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (49).jpg"
+    },
+    {
+      "original_name": "FreshApple (129).jpg",
+      "new_name": "FreshApple (50).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (129).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (50).jpg"
+    },
+    {
+      "original_name": "FreshApple (131).jpg",
+      "new_name": "FreshApple (51).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (131).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (51).jpg"
+    },
+    {
+      "original_name": "FreshApple (132).jpg",
+      "new_name": "FreshApple (52).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (132).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (52).jpg"
+    },
+    {
+      "original_name": "FreshApple (133).jpg",
+      "new_name": "FreshApple (53).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (133).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (53).jpg"
+    },
+    {
+      "original_name": "FreshApple (15).jpg",
+      "new_name": "FreshApple (54).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (15).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (54).jpg"
+    },
+    {
+      "original_name": "FreshApple (173).jpg",
+      "new_name": "FreshApple (55).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (173).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (55).jpg"
+    },
+    {
+      "original_name": "FreshApple (24).jpg",
+      "new_name": "FreshApple (56).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (24).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (56).jpg"
+    },
+    {
+      "original_name": "FreshApple (7).jpg",
+      "new_name": "FreshApple (57).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (7).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (57).jpg"
+    },
+    {
+      "original_name": "FreshApple (91).jpg",
+      "new_name": "FreshApple (58).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (91).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (58).jpg"
+    },
+    {
+      "original_name": "FreshApple (92).jpg",
+      "new_name": "FreshApple (59).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (92).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (59).jpg"
+    },
+    {
+      "original_name": "FreshApple (93).jpg",
+      "new_name": "FreshApple (60).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (93).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (60).jpg"
+    },
+    {
+      "original_name": "FreshApple (94).jpg",
+      "new_name": "FreshApple (61).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (94).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (61).jpg"
+    },
+    {
+      "original_name": "FreshApple (95).jpg",
+      "new_name": "FreshApple (62).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (95).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (62).jpg"
+    },
+    {
+      "original_name": "FreshApple (96).jpg",
+      "new_name": "FreshApple (63).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (96).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (63).jpg"
+    },
+    {
+      "original_name": "FreshApple (97).jpg",
+      "new_name": "FreshApple (64).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (97).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (64).jpg"
+    },
+    {
+      "original_name": "FreshApple (98).jpg",
+      "new_name": "FreshApple (65).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (98).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (65).jpg"
+    },
+    {
+      "original_name": "FreshApple (99).jpg",
+      "new_name": "FreshApple (66).jpg",
+      "source": "..\\outputs\\classified\\fresh\\FreshApple (99).jpg",
+      "destination": "..\\data\\train\\fresh\\FreshApple (66).jpg"
+    }
+  ]
+}
