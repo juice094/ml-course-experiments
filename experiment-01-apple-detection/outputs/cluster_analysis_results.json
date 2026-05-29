@@ -1,0 +1,77 @@
+{
+  "ari": 0.2897,
+  "n_samples": 150,
+  "feature_dim": 1280,
+  "pca_explained_variance": [
+    0.13511714339256287,
+    0.10067489743232727
+  ],
+  "cluster_to_label": {
+    "0": "insect_damaged",
+    "1": "black_spot",
+    "2": "wrinkled",
+    "3": "bruised",
+    "4": "diseased",
+    "5": "cracked",
+    "6": "cracked",
+    "7": "fresh"
+  },
+  "per_class_purity": [
+    {
+      "class": "black_spot",
+      "total_samples": 20,
+      "dominant_cluster": 1,
+      "dominant_count": 10,
+      "purity": 50.0
+    },
+    {
+      "class": "bruised",
+      "total_samples": 20,
+      "dominant_cluster": 3,
+      "dominant_count": 10,
+      "purity": 50.0
+    },
+    {
+      "class": "cracked",
+      "total_samples": 16,
+      "dominant_cluster": 6,
+      "dominant_count": 7,
+      "purity": 43.75
+    },
+    {
+      "class": "diseased",
+      "total_samples": 14,
+      "dominant_cluster": 4,
+      "dominant_count": 13,
+      "purity": 92.86
+    },
+    {
+      "class": "fresh",
+      "total_samples": 20,
+      "dominant_cluster": 7,
+      "dominant_count": 11,
+      "purity": 55.0
+    },
+    {
+      "class": "insect_damaged",
+      "total_samples": 20,
+      "dominant_cluster": 1,
+      "dominant_count": 9,
+      "purity": 45.0
+    },
+    {
+      "class": "rotten",
+      "total_samples": 20,
+      "dominant_cluster": 3,
+      "dominant_count": 9,
+      "purity": 45.0
+    },
+    {
+      "class": "wrinkled",
+      "total_samples": 20,
+      "dominant_cluster": 2,
+      "dominant_count": 19,
+      "purity": 95.0
+    }
+  ]
+}
