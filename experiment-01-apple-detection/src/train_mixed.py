@@ -152,15 +152,37 @@ def main():
     if not args.no_pseudo and PSEUDO_DIR.exists():
         print(f"Loading pseudo-label dataset from: {PSEUDO_DIR}")
         pseudo_dataset = datasets.ImageFolder(str(PSEUDO_DIR), transform=get_transforms(train=True))
-        print(f"  Pseudo-label samples: {len(pseudo_dataset)}")
+        print(f"  Raw pseudo-label samples: {len(pseudo_dataset)}")
 
-        # 检查类别一致性：伪标签集的类别顺序必须与原始集一致
-        if original_dataset.classes != pseudo_dataset.classes:
+        # ------------------------------------------------------------------
+        # 自动去重：排除与训练集重复/近似重复的图片（防止数据泄露）
+        # ------------------------------------------------------------------
+        dedup_path = OUTPUT_DIR / 'deduplication_results.json'
+        if dedup_path.exists():
+            import json as _json
+            dedup = _json.load(open(dedup_path, 'r', encoding='utf-8'))
+            dup_files = set(d['unlabeled'] for d in dedup.get('duplicates', []))
+            near_dup_files = set(d['unlabeled'] for d in dedup.get('near_duplicates', []))
+            all_dup = dup_files | near_dup_files
+
+            # 过滤 pseudo_dataset：保留非重复的样本索引
+            valid_indices = [
+                i for i, (path, _) in enumerate(pseudo_dataset.samples)
+                if Path(path).name not in all_dup
+            ]
+            from torch.utils.data import Subset
+            pseudo_dataset = Subset(pseudo_dataset, valid_indices)
+            excluded = len(pseudo_dataset.samples) - len(valid_indices) if hasattr(pseudo_dataset, 'samples') else 0
+            print(f"  After deduplication: {len(pseudo_dataset)} (excluded {len(all_dup)} duplicates)")
+        else:
+            print(f"  Warning: deduplication_results.json not found, skipping dedup filter")
+
+        # 检查类别一致性
+        if original_dataset.classes != pseudo_dataset.dataset.classes if hasattr(pseudo_dataset, 'dataset') else original_dataset.classes != pseudo_dataset.classes:
             print(f"Warning: Class mismatch!")
             print(f"  Original: {original_dataset.classes}")
-            print(f"  Pseudo:   {pseudo_dataset.classes}")
-            # 如果类别名相同但顺序不同，需要重映射
-            # 这里假设两者类别名集合相同
+            pseudo_cls = pseudo_dataset.dataset.classes if hasattr(pseudo_dataset, 'dataset') else pseudo_dataset.classes
+            print(f"  Pseudo:   {pseudo_cls}")
         else:
             datasets_to_concat.append(pseudo_dataset)
     elif not args.no_pseudo:
