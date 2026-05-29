@@ -1,0 +1,152 @@
+[
+  {
+    "file": "21_01_03_06_15_00_rgb_back_side_only_obj_4.jpg",
+    "prediction": "裂果 (Cracked)",
+    "confidence": "84.69%"
+  },
+  {
+    "file": "21_01_13_18_15_00_rgb_back_all_on_obj_14.jpg",
+    "prediction": "裂果 (Cracked)",
+    "confidence": "97.94%"
+  },
+  {
+    "file": "21_01_14_18_15_00_rgb_back_side_only_obj_3.jpg",
+    "prediction": "裂果 (Cracked)",
+    "confidence": "97.51%"
+  },
+  {
+    "file": "FreshApple (109).jpg",
+    "prediction": "合格 (Fresh)",
+    "confidence": "98.88%"
+  },
+  {
+    "file": "FreshApple (113).jpg",
+    "prediction": "合格 (Fresh)",
+    "confidence": "97.91%"
+  },
+  {
+    "file": "FreshApple (126).jpg",
+    "prediction": "合格 (Fresh)",
+    "confidence": "62.72%"
+  },
+  {
+    "file": "FreshApple (130).jpg",
+    "prediction": "合格 (Fresh)",
+    "confidence": "97.54%"
+  },
+  {
+    "file": "r1_166.jpg",
+    "prediction": "黑斑 (Black Spot)",
+    "confidence": "68.29%"
+  },
+  {
+    "file": "saltandpepper_Screen Shot 2018-06-07 at 2.41.23 PM.png",
+    "prediction": "碰伤 (Bruised)",
+    "confidence": "57.23%"
+  },
+  {
+    "file": "saltandpepper_Screen Shot 2018-06-07 at 2.47.01 PM.png",
+    "prediction": "褶皱 (Wrinkled)",
+    "confidence": "99.29%"
+  },
+  {
+    "file": "saltandpepper_Screen Shot 2018-06-07 at 2.57.49 PM.png",
+    "prediction": "腐烂 (Rotten)",
+    "confidence": "46.33%"
+  },
+  {
+    "file": "saltandpepper_Screen Shot 2018-06-07 at 2.59.23 PM.png",
+    "prediction": "病变 (Diseased)",
+    "confidence": "48.19%"
+  },
+  {
+    "file": "saltandpepper_Screen Shot 2018-06-08 at 2.35.03 PM.png",
+    "prediction": "虫伤 (Insect Damaged)",
+    "confidence": "80.10%"
+  },
+  {
+    "file": "saltandpepper_Screen Shot 2018-06-08 at 2.44.54 PM.png",
+    "prediction": "褶皱 (Wrinkled)",
+    "confidence": "42.73%"
+  },
+  {
+    "file": "saltandpepper_Screen Shot 2018-06-08 at 2.47.49 PM.png",
+    "prediction": "褶皱 (Wrinkled)",
+    "confidence": "92.41%"
+  },
+  {
+    "file": "saltandpepper_Screen Shot 2018-06-08 at 2.50.22 PM.png",
+    "prediction": "碰伤 (Bruised)",
+    "confidence": "76.12%"
+  },
+  {
+    "file": "saltandpepper_Screen Shot 2018-06-08 at 2.50.49 PM.png",
+    "prediction": "腐烂 (Rotten)",
+    "confidence": "52.47%"
+  },
+  {
+    "file": "Screen Shot 2018-06-07 at 2.25.16 PM.png",
+    "prediction": "黑斑 (Black Spot)",
+    "confidence": "93.80%"
+  },
+  {
+    "file": "Screen Shot 2018-06-07 at 2.51.08 PM.png",
+    "prediction": "褶皱 (Wrinkled)",
+    "confidence": "99.96%"
+  },
+  {
+    "file": "Screen Shot 2018-06-07 at 2.51.37 PM.png",
+    "prediction": "褶皱 (Wrinkled)",
+    "confidence": "91.28%"
+  },
+  {
+    "file": "Screen Shot 2018-06-07 at 2.57.05 PM.png",
+    "prediction": "裂果 (Cracked)",
+    "confidence": "100.00%"
+  },
+  {
+    "file": "Screen Shot 2018-06-07 at 3.02.02 PM.png",
+    "prediction": "腐烂 (Rotten)",
+    "confidence": "73.63%"
+  },
+  {
+    "file": "Screen Shot 2018-06-07 at 3.02.24 PM.png",
+    "prediction": "裂果 (Cracked)",
+    "confidence": "77.73%"
+  },
+  {
+    "file": "Screen Shot 2018-06-08 at 2.35.37 PM.png",
+    "prediction": "碰伤 (Bruised)",
+    "confidence": "50.89%"
+  },
+  {
+    "file": "vertical_flip_Screen Shot 2018-06-07 at 2.51.45 PM.png",
+    "prediction": "裂果 (Cracked)",
+    "confidence": "60.76%"
+  },
+  {
+    "file": "vertical_flip_Screen Shot 2018-06-08 at 2.27.44 PM.png",
+    "prediction": "碰伤 (Bruised)",
+    "confidence": "69.96%"
+  },
+  {
+    "file": "vertical_flip_Screen Shot 2018-06-08 at 2.29.20 PM.png",
+    "prediction": "碰伤 (Bruised)",
+    "confidence": "30.60%"
+  },
+  {
+    "file": "vertical_flip_Screen Shot 2018-06-08 at 2.38.47 PM.png",
+    "prediction": "腐烂 (Rotten)",
+    "confidence": "90.61%"
+  },
+  {
+    "file": "vertical_flip_Screen Shot 2018-06-08 at 2.49.40 PM.png",
+    "prediction": "腐烂 (Rotten)",
+    "confidence": "99.48%"
+  },
+  {
+    "file": "vertical_flip_Screen Shot 2018-06-08 at 2.52.20 PM.png",
+    "prediction": "褶皱 (Wrinkled)",
+    "confidence": "99.79%"
+  }
+]
