@@ -1,0 +1,563 @@
+{
+  "threshold": 5,
+  "train_images": 150,
+  "unlabeled_images": 765,
+  "exact_duplicates": 69,
+  "near_duplicates": [
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-07 at 2.19.37 PM.jpg",
+      "train": "insect_damaged/Screen Shot 2018-06-07 at 2.19.37 PM.jpg",
+      "hamming_distance": 1,
+      "status": "near_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-07 at 2.45.09 PM.jpg",
+      "train": "wrinkled/Screen Shot 2018-06-07 at 2.45.09 PM.jpg",
+      "hamming_distance": 2,
+      "status": "near_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-07 at 2.45.35 PM.jpg",
+      "train": "wrinkled/Screen Shot 2018-06-07 at 2.45.35 PM.jpg",
+      "hamming_distance": 1,
+      "status": "near_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-07 at 2.50.31 PM.jpg",
+      "train": "rotten/Screen Shot 2018-06-07 at 2.50.31 PM.jpg",
+      "hamming_distance": 2,
+      "status": "near_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-07 at 2.56.16 PM.jpg",
+      "train": "rotten/Screen Shot 2018-06-07 at 2.56.16 PM.jpg",
+      "hamming_distance": 1,
+      "status": "near_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-07 at 3.02.09 PM.jpg",
+      "train": "bruised/Screen Shot 2018-06-07 at 3.02.09 PM.jpg",
+      "hamming_distance": 1,
+      "status": "near_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-07 at 3.06.51 PM.jpg",
+      "train": "wrinkled/Screen Shot 2018-06-07 at 3.06.51 PM.jpg",
+      "hamming_distance": 2,
+      "status": "near_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-08 at 2.47.09 PM.jpg",
+      "train": "rotten/Screen Shot 2018-06-08 at 2.47.09 PM.jpg",
+      "hamming_distance": 1,
+      "status": "near_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-07 at 2.20.46 PM.jpg",
+      "train": "bruised/saltandpepper_Screen Shot 2018-06-07 at 2.20.46 PM.jpg",
+      "hamming_distance": 4,
+      "status": "near_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-07 at 2.37.32 PM.jpg",
+      "train": "wrinkled/saltandpepper_Screen Shot 2018-06-07 at 2.37.32 PM.jpg",
+      "hamming_distance": 2,
+      "status": "near_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-07 at 2.38.28 PM.jpg",
+      "train": "black_spot/saltandpepper_Screen Shot 2018-06-07 at 2.38.28 PM.jpg",
+      "hamming_distance": 1,
+      "status": "near_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-07 at 2.44.26 PM.jpg",
+      "train": "bruised/saltandpepper_Screen Shot 2018-06-07 at 2.44.26 PM.jpg",
+      "hamming_distance": 1,
+      "status": "near_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-07 at 2.53.57 PM.jpg",
+      "train": "bruised/saltandpepper_Screen Shot 2018-06-07 at 2.53.57 PM.jpg",
+      "hamming_distance": 2,
+      "status": "near_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-07 at 3.04.47 PM.jpg",
+      "train": "wrinkled/Screen Shot 2018-06-07 at 2.46.12 PM.jpg",
+      "hamming_distance": 5,
+      "status": "near_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-07 at 3.06.11 PM.jpg",
+      "train": "bruised/saltandpepper_Screen Shot 2018-06-07 at 3.06.11 PM.jpg",
+      "hamming_distance": 3,
+      "status": "near_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-08 at 2.26.55 PM.jpg",
+      "train": "bruised/saltandpepper_Screen Shot 2018-06-08 at 2.26.55 PM.jpg",
+      "hamming_distance": 1,
+      "status": "near_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-08 at 2.42.38 PM.jpg",
+      "train": "bruised/saltandpepper_Screen Shot 2018-06-08 at 2.42.38 PM.jpg",
+      "hamming_distance": 1,
+      "status": "near_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-08 at 2.46.36 PM.jpg",
+      "train": "bruised/saltandpepper_Screen Shot 2018-06-08 at 2.46.36 PM.jpg",
+      "hamming_distance": 1,
+      "status": "near_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-08 at 2.48.43 PM.jpg",
+      "train": "bruised/saltandpepper_Screen Shot 2018-06-08 at 2.48.43 PM.jpg",
+      "hamming_distance": 2,
+      "status": "near_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-08 at 2.49.40 PM.jpg",
+      "train": "rotten/saltandpepper_Screen Shot 2018-06-08 at 2.49.40 PM.jpg",
+      "hamming_distance": 1,
+      "status": "near_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-08 at 2.50.55 PM.jpg",
+      "train": "rotten/saltandpepper_Screen Shot 2018-06-08 at 2.50.55 PM.jpg",
+      "hamming_distance": 2,
+      "status": "near_duplicate"
+    },
+    {
+      "unlabeled": "vertical_flip_Screen Shot 2018-06-08 at 2.25.17 PM.jpg",
+      "train": "rotten/vertical_flip_Screen Shot 2018-06-07 at 3.03.46 PM.jpg",
+      "hamming_distance": 5,
+      "status": "near_duplicate"
+    },
+    {
+      "unlabeled": "vertical_flip_Screen Shot 2018-06-08 at 2.52.05 PM.jpg",
+      "train": "insect_damaged/Screen Shot 2018-06-07 at 2.19.37 PM.jpg",
+      "hamming_distance": 5,
+      "status": "near_duplicate"
+    }
+  ],
+  "safe_to_use": 696,
+  "duplicates": [
+    {
+      "unlabeled": "r1_34_褶皱_pred_裂果.jpg",
+      "train": "wrinkled/r1_34.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "rottenapple_435795946_250_碰伤_pred_虫伤.jpg",
+      "train": "bruised/rottenapple_435795946_250.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-07 at 2.17.15 PM.jpg",
+      "train": "insect_damaged/Screen Shot 2018-06-07 at 2.17.15 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-07 at 2.19.46 PM.jpg",
+      "train": "bruised/saltandpepper_Screen Shot 2018-06-07 at 2.19.46 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-07 at 2.23.02 PM.jpg",
+      "train": "black_spot/saltandpepper_Screen Shot 2018-06-07 at 2.23.02 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-07 at 2.36.06 PM.jpg",
+      "train": "wrinkled/Screen Shot 2018-06-07 at 2.36.06 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-07 at 2.43.54 PM.jpg",
+      "train": "insect_damaged/Screen Shot 2018-06-07 at 2.43.54 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-07 at 2.44.05 PM.jpg",
+      "train": "insect_damaged/Screen Shot 2018-06-07 at 2.44.05 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-07 at 2.57.26 PM.jpg",
+      "train": "bruised/Screen Shot 2018-06-07 at 2.57.26 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-07 at 2.58.04 PM.jpg",
+      "train": "black_spot/saltandpepper_Screen Shot 2018-06-07 at 2.58.04 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-07 at 2_虫伤_pred_褶皱.jpg",
+      "train": "insect_damaged/saltandpepper_Screen Shot 2018-06-07 at 2.22.00 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-07 at 3.05.58 PM.jpg",
+      "train": "wrinkled/Screen Shot 2018-06-07 at 3.05.58 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-07 at 3.06.11 PM.jpg",
+      "train": "bruised/saltandpepper_Screen Shot 2018-06-07 at 3.06.11 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-07 at 3_腐烂_pred_褶皱.jpg",
+      "train": "wrinkled/Screen Shot 2018-06-07 at 3.05.58 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-08 at 2.26.55 PM.jpg",
+      "train": "bruised/saltandpepper_Screen Shot 2018-06-08 at 2.26.55 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-08 at 2.35.10 PM.jpg",
+      "train": "bruised/saltandpepper_Screen Shot 2018-06-08 at 2.35.10 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-08 at 2.36.55 PM.jpg",
+      "train": "rotten/Screen Shot 2018-06-08 at 2.36.55 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-08 at 2.40.09 PM.jpg",
+      "train": "rotten/Screen Shot 2018-06-08 at 2.40.09 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-08 at 2.42.38 PM.jpg",
+      "train": "bruised/saltandpepper_Screen Shot 2018-06-08 at 2.42.38 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-08 at 2.45.44 PM.jpg",
+      "train": "black_spot/saltandpepper_Screen Shot 2018-06-08 at 2.45.44 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-08 at 2.48.43 PM.jpg",
+      "train": "bruised/saltandpepper_Screen Shot 2018-06-08 at 2.48.43 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-08 at 2.49.40 PM.jpg",
+      "train": "rotten/saltandpepper_Screen Shot 2018-06-08 at 2.49.40 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-08 at 2.50.25 PM.jpg",
+      "train": "rotten/saltandpepper_Screen Shot 2018-06-08 at 2.50.25 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-08 at 2.50.38 PM.jpg",
+      "train": "rotten/saltandpepper_Screen Shot 2018-06-08 at 2.50.38 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-08 at 2.50.38 PM.jpg",
+      "train": "rotten/Screen Shot 2018-06-08 at 2.50.38 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-08 at 2.50.55 PM.jpg",
+      "train": "rotten/saltandpepper_Screen Shot 2018-06-08 at 2.50.55 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "saltandpepper_Screen Shot 2018-06-08 at 2.53.14 PM.jpg",
+      "train": "bruised/saltandpepper_Screen Shot 2018-06-08 at 2.53.14 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-07 at 2.16.18 PM.jpg",
+      "train": "insect_damaged/saltandpepper_Screen Shot 2018-06-07 at 2.16.18 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-07 at 2.19.46 PM.jpg",
+      "train": "bruised/saltandpepper_Screen Shot 2018-06-07 at 2.19.46 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-07 at 2.22.00 PM.jpg",
+      "train": "insect_damaged/saltandpepper_Screen Shot 2018-06-07 at 2.22.00 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-07 at 2.25.26 PM.jpg",
+      "train": "insect_damaged/saltandpepper_Screen Shot 2018-06-07 at 2.25.26 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-07 at 2.39.26 PM.jpg",
+      "train": "black_spot/Screen Shot 2018-06-07 at 2.39.26 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-07 at 2.40.13 PM.jpg",
+      "train": "wrinkled/saltandpepper_Screen Shot 2018-06-07 at 2.40.13 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-07 at 2.50.09 PM.jpg",
+      "train": "bruised/saltandpepper_Screen Shot 2018-06-07 at 2.50.09 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-07 at 2.50.31 PM.jpg",
+      "train": "rotten/Screen Shot 2018-06-07 at 2.50.31 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-07 at 2.56.16 PM.jpg",
+      "train": "rotten/Screen Shot 2018-06-07 at 2.56.16 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-07 at 2.57.05 PM.jpg",
+      "train": "cracked/saltandpepper_Screen Shot 2018-06-07 at 2.57.05 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-07 at 2.57.05 PM.jpg",
+      "train": "cracked/Screen Shot 2018-06-07 at 2.57.05 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-07 at 2.57.26 PM.jpg",
+      "train": "bruised/Screen Shot 2018-06-07 at 2.57.26 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-07 at 2.57.42 PM.jpg",
+      "train": "insect_damaged/saltandpepper_Screen Shot 2018-06-07 at 2.57.42 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-07 at 2.58.04 PM.jpg",
+      "train": "black_spot/saltandpepper_Screen Shot 2018-06-07 at 2.58.04 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-07 at 3.02.09 PM.jpg",
+      "train": "bruised/Screen Shot 2018-06-07 at 3.02.09 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-07 at 3.02.18 PM.jpg",
+      "train": "bruised/saltandpepper_Screen Shot 2018-06-07 at 3.02.18 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-08 at 2.32.10 PM.jpg",
+      "train": "wrinkled/saltandpepper_Screen Shot 2018-06-08 at 2.32.10 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-08 at 2.34.05 PM.jpg",
+      "train": "black_spot/Screen Shot 2018-06-08 at 2.34.05 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-08 at 2.35.10 PM.jpg",
+      "train": "bruised/saltandpepper_Screen Shot 2018-06-08 at 2.35.10 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-08 at 2.36.55 PM.jpg",
+      "train": "rotten/Screen Shot 2018-06-08 at 2.36.55 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-08 at 2.40.09 PM.jpg",
+      "train": "rotten/Screen Shot 2018-06-08 at 2.40.09 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-08 at 2.41.39 PM.jpg",
+      "train": "insect_damaged/saltandpepper_Screen Shot 2018-06-08 at 2.41.39 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-08 at 2.41.44 PM.jpg",
+      "train": "insect_damaged/saltandpepper_Screen Shot 2018-06-08 at 2.41.44 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-08 at 2.47.09 PM.jpg",
+      "train": "rotten/Screen Shot 2018-06-08 at 2.47.09 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-08 at 2.50.25 PM.jpg",
+      "train": "rotten/saltandpepper_Screen Shot 2018-06-08 at 2.50.25 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-08 at 2.50.33 PM.jpg",
+      "train": "rotten/Screen Shot 2018-06-08 at 2.50.33 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-08 at 2.50.38 PM.jpg",
+      "train": "rotten/saltandpepper_Screen Shot 2018-06-08 at 2.50.38 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-08 at 2.50.38 PM.jpg",
+      "train": "rotten/Screen Shot 2018-06-08 at 2.50.38 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "Screen Shot 2018-06-08 at 2.53.14 PM.jpg",
+      "train": "bruised/saltandpepper_Screen Shot 2018-06-08 at 2.53.14 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "vertical_flip_Screen Shot 2018-06-07 at 2.15.50 PM.jpg",
+      "train": "cracked/vertical_flip_Screen Shot 2018-06-07 at 2.15.50 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "vertical_flip_Screen Shot 2018-06-07 at 2.39.26 PM.jpg",
+      "train": "black_spot/vertical_flip_Screen Shot 2018-06-07 at 2.39.26 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "vertical_flip_Screen Shot 2018-06-07 at 2.50.31 PM.jpg",
+      "train": "rotten/vertical_flip_Screen Shot 2018-06-07 at 2.50.31 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "vertical_flip_Screen Shot 2018-06-07 at 2.52.30 PM.jpg",
+      "train": "rotten/vertical_flip_Screen Shot 2018-06-07 at 2.52.30 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "vertical_flip_Screen Shot 2018-06-07 at 2.56.16 PM.jpg",
+      "train": "rotten/vertical_flip_Screen Shot 2018-06-07 at 2.56.16 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "vertical_flip_Screen Shot 2018-06-07 at 2.57.05 PM.jpg",
+      "train": "cracked/vertical_flip_Screen Shot 2018-06-07 at 2.57.05 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "vertical_flip_Screen Shot 2018-06-07 at 3.03.46 PM.jpg",
+      "train": "rotten/vertical_flip_Screen Shot 2018-06-07 at 3.03.46 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "vertical_flip_Screen Shot 2018-06-08 at 2.35.25 PM.jpg",
+      "train": "bruised/vertical_flip_Screen Shot 2018-06-08 at 2.35.25 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "vertical_flip_Screen Shot 2018-06-08 at 2.36.55 PM.jpg",
+      "train": "rotten/vertical_flip_Screen Shot 2018-06-08 at 2.36.55 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "vertical_flip_Screen Shot 2018-06-08 at 2.40.09 PM.jpg",
+      "train": "rotten/vertical_flip_Screen Shot 2018-06-08 at 2.40.09 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "vertical_flip_Screen Shot 2018-06-08 at 2.47.09 PM.jpg",
+      "train": "rotten/vertical_flip_Screen Shot 2018-06-08 at 2.47.09 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "vertical_flip_Screen Shot 2018-06-08 at 2.50.33 PM.jpg",
+      "train": "rotten/vertical_flip_Screen Shot 2018-06-08 at 2.50.33 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    },
+    {
+      "unlabeled": "vertical_flip_Screen Shot 2018-06-08 at 2.50.38 PM.jpg",
+      "train": "rotten/vertical_flip_Screen Shot 2018-06-08 at 2.50.38 PM.jpg",
+      "hamming_distance": 0,
+      "status": "exact_duplicate"
+    }
+  ]
+}
