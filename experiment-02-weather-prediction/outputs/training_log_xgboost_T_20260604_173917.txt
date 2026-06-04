@@ -1,0 +1,42 @@
+Logging to: C:\Users\22414\dev\ml-course-experiments\experiment-02-weather-prediction\outputs\training_log_xgboost_T_20260604_173917.txt
+
+Loading data ...
+Train: 130246, Val: 17464, Test: 26267
+Features: 33
+
+Training XGBoost ...
+Best iteration: 499
+
+Train Metrics:
+  RMSE: 0.5943
+  MAE:  0.4524
+  R²:   0.9977
+  MAPE: inf%
+
+Validation Metrics:
+  RMSE: 0.9062
+  MAE:  0.6655
+  R²:   0.9947
+  MAPE: inf%
+
+Test Metrics:
+  RMSE: 0.8889
+  MAE:  0.6630
+  R²:   0.9949
+  MAPE: inf%
+
+Top 10 Feature Importances:
+ feature   importance
+  T_lag8 31197.759766
+  T_lag1 14063.042969
+      Tx  2664.055420
+hour_cos  2613.902832
+ T_lag24  2163.237793
+      Tn  1914.917114
+hour_sin  1549.662598
+    hour   907.252869
+       P   539.790161
+       U   421.209442
+
+Model saved: C:\Users\22414\dev\ml-course-experiments\experiment-02-weather-prediction\models\xgboost_T.json
+Results saved: C:\Users\22414\dev\ml-course-experiments\experiment-02-weather-prediction\outputs\results_xgboost_T.json

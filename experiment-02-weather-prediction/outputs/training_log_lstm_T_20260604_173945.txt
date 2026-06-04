@@ -1,0 +1,34 @@
+Logging to: C:\Users\22414\dev\ml-course-experiments\experiment-02-weather-prediction\outputs\training_log_lstm_T_20260604_173945.txt
+
+Using device: cuda
+Loading data ...
+Input features: 33, Sequence length: 24
+
+Starting training ...
+Epoch 1/50 | Train Loss: 50.9201 | Val RMSE: 4.4904 | Val R²: 0.8690
+Epoch 2/50 | Train Loss: 17.4898 | Val RMSE: 3.0957 | Val R²: 0.9378
+Epoch 3/50 | Train Loss: 13.6277 | Val RMSE: 2.9898 | Val R²: 0.9419
+Epoch 4/50 | Train Loss: 12.1222 | Val RMSE: 2.8157 | Val R²: 0.9485
+Epoch 5/50 | Train Loss: 10.9818 | Val RMSE: 2.8647 | Val R²: 0.9467
+Epoch 6/50 | Train Loss: 10.3475 | Val RMSE: 2.7070 | Val R²: 0.9524
+Epoch 7/50 | Train Loss: 9.8102 | Val RMSE: 2.8135 | Val R²: 0.9486
+Epoch 8/50 | Train Loss: 9.4824 | Val RMSE: 2.6865 | Val R²: 0.9531
+Epoch 9/50 | Train Loss: 9.4342 | Val RMSE: 2.6818 | Val R²: 0.9533
+Epoch 10/50 | Train Loss: 9.0867 | Val RMSE: 2.8961 | Val R²: 0.9455
+Epoch 11/50 | Train Loss: 9.1308 | Val RMSE: 2.7620 | Val R²: 0.9505
+Epoch 12/50 | Train Loss: 8.9591 | Val RMSE: 2.8113 | Val R²: 0.9487
+Epoch 13/50 | Train Loss: 8.8779 | Val RMSE: 2.9099 | Val R²: 0.9450
+Epoch 14/50 | Train Loss: 8.6679 | Val RMSE: 2.7092 | Val R²: 0.9523
+Epoch 15/50 | Train Loss: 8.5907 | Val RMSE: 2.8471 | Val R²: 0.9474
+Epoch 16/50 | Train Loss: 7.9971 | Val RMSE: 2.7106 | Val R²: 0.9523
+Epoch 17/50 | Train Loss: 7.9411 | Val RMSE: 2.7736 | Val R²: 0.9500
+Epoch 18/50 | Train Loss: 8.0493 | Val RMSE: 2.7508 | Val R²: 0.9509
+Epoch 19/50 | Train Loss: 7.8866 | Val RMSE: 2.8528 | Val R²: 0.9471
+Early stopping at epoch 19
+
+Evaluating on test set ...
+Test RMSE: 2.8549
+Test MAE:  2.2640
+Test R²:   0.9477
+
+Results saved: C:\Users\22414\dev\ml-course-experiments\experiment-02-weather-prediction\outputs\results_lstm_T.json
